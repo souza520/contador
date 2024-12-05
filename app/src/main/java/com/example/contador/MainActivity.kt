@@ -83,6 +83,13 @@ fun Greeting(modifier: Modifier = Modifier) {
         ) {
             Text(text="Contar", fontSize = 30.sp)
         }
+
+        Button(
+            // onClick é um evento que altera o estado (dado)
+            onClick = { count = 0}
+        ) {
+            Text(text="Limpar", fontSize = 30.sp)
+        }
     }
 
 }
